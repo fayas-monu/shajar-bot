@@ -1,14 +1,33 @@
 {
-  "name": "whatsapp-business-bot",
+  "name": "shajar-bot",
   "version": "1.0.0",
-  "description": "WhatsApp Bot using Baileys and Node.js",
+  "description": "Self-hosted WhatsApp Business user bot built with Baileys, Sharp and an AI support agent",
+  "type": "module",
   "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
+  "engines": {
+    "node": ">=20.0.0"
   },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "baileys",
+    "self-hosted",
+    "business",
+    "automation"
+  ],
+  "license": "MIT",
   "dependencies": {
-    "@whiskeysockets/baileys": "^6.7.5",
+    "@napi-rs/canvas": "^1.1.1",
+    "@whiskeysockets/baileys": "^7.0.0-rc14",
+    "dotenv": "^16.4.5",
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^6.5.438",
     "pino": "^9.0.0",
-    "sharp": "^0.33.0"
+    "qrcode-terminal": "^0.12.0",
+    "sharp": "^0.35.5"
   }
 }
